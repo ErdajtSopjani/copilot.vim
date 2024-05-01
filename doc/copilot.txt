@@ -130,6 +130,10 @@ Lua version:
         })
         vim.g.copilot_no_tab_map = true
 <
+To disable the <Tab> accept keymap add this line (on the copilot setup/config):
+>
+        vim.keymap.del('i', '<Tab>')
+<
 The argument to copilot#Accept() is the fallback for when no suggestion is
 displayed.  In this example, a regular carriage return is used.  If no
 fallback is desired, use an argument of "" (an empty string).
